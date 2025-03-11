@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <meta property="og:title" content="Список сделок" />
+    <meta property="og:description" content="Просмотр тестового задания" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Emfy test" />
+
+    <title>Emfy test</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Список сделок amoCRM</h1>
+      <div>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Название</th>
+              <th>Бюджет</th>
+              <th>Задача</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <div id="loading">Загрузка данных...</div>
+      </div>
+    </div>
+    <script async src="./script/index.js"></script>
+  </body>
+</html>
