@@ -229,6 +229,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       config.accessToken.length !== 0
     ) {
       localStorage.setItem("access_token", config.accessToken);
+
       localStorage.setItem("refresh_token", config.refreshToken);
     }
 
