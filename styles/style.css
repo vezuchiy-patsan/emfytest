@@ -1,0 +1,86 @@
+@import "globals.css";
+
+body {
+  font: var(--font-size-m);
+  padding: 25px 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--font-size-l);
+}
+
+button {
+  border-radius: var(--border-radius-s);
+  background: var(--primary-color);
+  font-family: inherit;
+  padding: 6px 10px;
+  font-weight: 700;
+  border: 2px solid black;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+th,
+td:first-child {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+}
+th,
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+td {
+  background: var(--secondary-color);
+}
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+dialog {
+  border: 0;
+  border-radius: var(--border-radius-m);
+  box-shadow: 1px 3px 7px 0 #000;
+}
+
+#dialog-content {
+  margin: 10px;
+}
+
+dialog button {
+  width: 100%;
+}
+
+svg .circle-fill.red {
+  fill: red;
+}
+svg .circle-fill.green {
+  fill: green;
+}
+svg .circle-fill.yellow {
+  fill: yellow;
+}

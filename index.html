@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <meta property="og:title" content="Список сделок" />
     <meta property="og:description" content="Просмотр тестового задания" />
@@ -16,6 +16,10 @@
     <title>Emfy test</title>
   </head>
   <body>
+    <dialog id="dealDialog">
+      <div id="dialog-content"></div>
+      <button type="button" onclick="window.dealDialog.close()">Закрыть</button>
+    </dialog>
     <div class="container">
       <h1>Список сделок amoCRM</h1>
       <div>
@@ -30,9 +34,8 @@
           </thead>
           <tbody id="table-body"></tbody>
         </table>
-        <div id="loading">Загрузка данных...</div>
       </div>
     </div>
-    <script src="./script/index.js"></script>
+    <script type="module" src="./script/index.js"></script>
   </body>
 </html>
